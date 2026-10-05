@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>
+        {{ $title }}
+    </title>
+
     @vite('resources/css/app.css')
 </head>
 
 <body>
 
     <h1 class="text-2xl font-bold ml-4 ">About me</h1>
-    <h3 class="text-lg font-semibold ml-4 ">Hello, aku raymundus Arya.</h3>
-    <p class="text-gray-600 ml-4 ">Hobi saya adalah olahraga dan mendengarkan musik.</p>
-    <p class="text-gray-600 ml-4 ">Berikut profile sosmed dan gitHub saya</p>
+    <h3 class="text-lg font-semibold ml-4 ">Hello, aku {{ $nama }}.</h3>
+    <p class="text-gray-600 ml-4 ">Hobi saya adalah {{ $hobi }}.</p>
+    <p class="text-gray-600 ml-4 ">{{ $tagline }}</p>
     <ol class="list-decimal list-inside ml-4 ">
         <li><a href="https://www.instagram.com/raymndus_arya/" target="_blank"
                 class="text-blue-500 hover:underline">Instagram Utama</a></li>
@@ -25,5 +28,5 @@
                 class="text-blue-500 hover:underline">Threads</a></li>
     </ol>
 </body>
-
+\
 </html>

@@ -1,19 +1,19 @@
 <x-admin.layout>
 
     <h1 class="text-2xl font-bold text-white">
-        About me
+        {{ $title }}
     </h1>
 
     <h3 class="text-lg font-semibold text-white mt-2">
-        Hello, aku Raymundus Arya.
+        {{ $nama }}
     </h3>
 
     <p class="text-gray-400 mt-2">
-        Hobi saya adalah olahraga dan mendengarkan musik.
+         {{ $hobi }}.
     </p>
 
     <p class="text-gray-400 mt-2">
-        Berikut profile sosmed dan GitHub saya
+            {{ $tagline }}.
     </p>
 
     <ol class="list-decimal list-inside mt-3 space-y-1 text-gray-300">
@@ -37,6 +37,22 @@
                 Threads
             </a>
         </li>
+        <li>
+            <a href="https://www.behance.net/raymundaryasat" target="_blank" class="text-blue-400 hover:underline">
+                Behance
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/raymundus-arya-66484a427/" target="_blank" class="text-blue-400 hover:underline">
+                LinkedIn
+            </a>
+        </li>
+        <li>
+            <a href="https://500px.com/p/capturedby_arya" target="_blank" class="text-blue-400 hover:underline">
+                500px
+            </a>
+        </li>
+
     </ol>
     </div>
 </x-admin.layout>
