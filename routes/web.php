@@ -30,4 +30,4 @@ Route::get('/admin/about', [AboutController::class, 'about']);
 
 Route::get('/admin/student', [App\Http\Controllers\StudentController::class, 'index']);
 
-
+Route::get('/admin/classroom', [App\Http\Controllers\ClassroomController::class, 'index']);

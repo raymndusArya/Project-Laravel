@@ -9,11 +9,11 @@
     </h3>
 
     <p class="text-gray-400 mt-2">
-         {{ $hobi }}.
+        {{ $hobi }}.
     </p>
 
     <p class="text-gray-400 mt-2">
-            {{ $tagline }}.
+        {{ $tagline }}.
     </p>
 
     <ol class="list-decimal list-inside mt-3 space-y-1 text-gray-300">
@@ -43,7 +43,8 @@
             </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/in/raymundus-arya-66484a427/" target="_blank" class="text-blue-400 hover:underline">
+            <a href="https://www.linkedin.com/in/raymundus-arya-66484a427/" target="_blank"
+                class="text-blue-400 hover:underline">
                 LinkedIn
             </a>
         </li>

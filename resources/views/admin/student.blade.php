@@ -51,9 +51,9 @@
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-4 py-3">No</th>
+                                <th scope="col" class="px-4 py-3">Nama</th>
                                 <th scope="col" class="px-4 py-3">NIS</th>
-                                <th scope="col" class="px-4 py-3">Name</th>
-                                <th scope="col" class="px-4 py-3">Class</th>
+                                <th scope="col" class="px-4 py-3">Classroom</th>
                                 <th scope="col" class="px-4 py-3">
                                     <span class="sr-only">Actions</span>
                                 </th>
@@ -63,11 +63,11 @@
                             @foreach ($students as $student)
                                 <tr class="border-b dark:border-gray-700">
                                     <td class="px-4 py-3">{{ $loop->iteration }}</td>
-                                    <td class="px-4 py-3">{{ $student['nis'] }}</td>
                                     <th scope="row"
                                         class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        {{ $student['name'] }}
+                                        {{ $student['nama'] }}
                                     </th>
+                                    <td class="px-4 py-3">{{ $student['nis'] }}</td>
                                     <td class="px-4 py-3">{{ $student['classroom'] }}</td>
                                     <td class="px-4 py-3 flex items-center justify-end">
                                         <button id="student-{{ $loop->iteration }}-dropdown-button"
